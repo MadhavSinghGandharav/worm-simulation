@@ -111,7 +111,6 @@ while running:
         node.update()
 
     eyes_pos = math.atan2(chain[0].y-chain[0].next_node.y,chain[0].x-chain[0].next_node.x)
-    print(math.degrees(eyes_pos))
     pygame.draw.circle(screen,WHITE, [chain[0].x+eyes_size*math.cos(eyes_pos+0.5),chain[0].y+eyes_size*math.sin(eyes_pos+0.5)],10)
     pygame.draw.circle(screen,WHITE, [chain[0].x+eyes_size*math.cos(eyes_pos-0.5),chain[0].y+eyes_size*math.sin(eyes_pos-0.5)],10)
 
